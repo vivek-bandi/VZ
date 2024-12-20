@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const dbgr = require('debug')('development:mongoose');
+const dbgr = require("debug")("development:mongoose");
 const config = require("config");
 
 mongoose
@@ -9,6 +9,6 @@ mongoose
   })
   .catch(function (err) {
     dbgr(err);
-  })
+  });
 
 module.exports = mongoose.connection;
